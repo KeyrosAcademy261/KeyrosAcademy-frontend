@@ -1,0 +1,18 @@
+.Alayout{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ANavBar{
+        width: 15%;
+        height: 100%;
+        background-color:#1e4854; 
+    }
+    .AdminContainer{
+        width: 85%;
+        height: 100%;
+
+    }
+
+}

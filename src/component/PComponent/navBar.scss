@@ -1,0 +1,87 @@
+.containerFluidNavBar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #1e4854;
+    z-index: 999;
+    .ContainerNavbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 1200px;
+        backdrop-filter: blur(20px);
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            h1{
+                font-size: 1.5rem;
+                font-family: 'Dosis';
+                font-weight: 700;
+                a{
+                    color: #fefefe;
+                    text-decoration: none;
+                }
+            }
+            img{
+                width:80px;
+                height: 80px;
+            }
+            
+        }
+        .navigation{
+            width: 60%;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 100%;
+
+                li{
+                    text-align: center;
+                    padding: 0 auto;
+                    margin: 0;
+                    list-style: none;
+                    width: 10rem;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    color: #f2f2f2;
+                    a{
+                        text-decoration: none;
+                        color: #f2f2f2;
+                    }
+                }
+            }
+        }
+        .connexion{
+            width:10%;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                    padding: 0;
+                li{
+                    height: 100%;
+                    font-size: 0.8rem;
+                    list-style: none;
+                    width: 4.5rem;
+                    font-weight: 400;
+                    color: aliceblue;
+                    margin: 0;
+                    padding: 0;
+                    a{
+                        margin: 0 auto;
+                        padding: 0;
+                        color: aliceblue;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

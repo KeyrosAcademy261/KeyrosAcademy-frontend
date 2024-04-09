@@ -1,0 +1,69 @@
+.containerProfessor{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .titleProfessor{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        h2{
+            color: #1e4854;
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    .second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .aside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 400px;
+                height: 550px;
+                border-radius: 50%;
+                border: 2px solid #242424;
+            }
+            p{
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+            }
+        }
+        .section{
+            width: 50%;
+            height: 30rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .article{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 80%;
+                height: 100%;
+                p{
+                   text-align: justify;
+                   font-size: 1rem;
+                   margin-bottom: 1rem; 
+                   span{
+                    margin-left: 2rem;
+                   }
+                }
+                h3{
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+        }
+    }
+}

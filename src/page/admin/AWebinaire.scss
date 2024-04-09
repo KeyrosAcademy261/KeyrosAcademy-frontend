@@ -1,0 +1,52 @@
+.AWebinaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 80px);
+  .affichageWebinaire {
+    width: 80%;
+    height: 100%;
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 1rem 0 2rem 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 99%;
+      padding: 0;
+      margin: 0 auto;
+      table-layout: fixed;
+      thead {
+        height: 50px;
+        border: 1px solid #242424;
+        background-color:#1e4854;
+        color: #fefefe;
+        th {
+          width: 20%;
+          text-transform: uppercase;
+        }
+      }
+      tbody {
+        width: 100%;
+        td {
+          width: 20%;
+          height: 30px;
+          padding: 10px 0 10px 0;
+          text-align: center;
+          a {
+            color: #242424;
+            text-decoration: none;
+          }
+          .iconPannel {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .formWebinaire {
+    width: 20%;
+  }
+}

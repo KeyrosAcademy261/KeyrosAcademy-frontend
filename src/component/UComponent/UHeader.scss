@@ -1,0 +1,54 @@
+.UHeaderContainer {
+    display: flex;
+    justify-content: space-arround;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    border-left: 2px solid #fefefe;
+    background-color: #1e4854;
+    .searchBar {
+      display: flex;
+      align-items: center;
+      width: 95%;
+      margin-left: 20px;
+      input {
+        position: relative;
+        margin-left: 0;
+        width: 40%;
+        height: 2.5rem;
+        border: none;
+        border-radius: 20px;
+        padding-left: 2.8rem;
+      }
+      
+      .IconSearchBar {
+        position: absolute;
+        color: #242424;
+        font-size: 1.6rem;
+        margin-left: 10px;
+        font-weight: 700;
+        z-index: 1;
+      }
+    }
+    .AvatarUser {
+      width:10%;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      h3{
+        width: 60px;
+        height: 60px;
+        font-family: 'dosis';
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #242424;
+        background-color: #fefefe;
+        border-radius: 50%;
+        text-transform: uppercase;
+        color: #1e4854;
+      }
+    }
+  }
+  

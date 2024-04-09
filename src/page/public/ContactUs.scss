@@ -1,0 +1,186 @@
+.contactContainer {
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .firstComponent {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .secondComponent {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .aside {
+      width: 25%;
+      height: 70%;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-image: linear-gradient(to right top, #1e4854, #1b515d, #165a65, #10646c, #096d72);
+      box-shadow: -5px 5px 5px #1E4854, 5px -5px 20px #096D72;
+      border-radius: 20px;
+      color: #fefefe;
+      .introduction {
+        width: 100%;
+        height: 30%;
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: 0.9rem;
+          font-weight: 100;
+        }
+      }
+      .contactEPA {
+        width: 100%;
+        height: 80%;
+        p {
+          align-items: center;
+          font-size: 1.3rem;
+          margin-bottom: 2rem;
+          text-align: left;
+        }
+      }
+      .socialResaux {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+      }
+      .icon {
+        font-size: 1.5rem;
+      }
+      .contact {
+        margin-right: 1rem;
+      }
+    }
+    .article {
+      width: 50%;
+      height: 70%;
+      form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .partname {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 15%;
+          .formGroup {
+            width: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            label {
+              text-align: left;
+            }
+            input {
+              width: 90%;
+              height: 2rem;
+              border: none;
+              border-bottom: 0.5px solid #242424;
+              &:focus {
+                border: none;
+              }
+            }
+          }
+        }
+        .partcontact {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 15%;
+          .formGroup {
+            width: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            label {
+              text-align: left;
+            }
+            input {
+              width: 90%;
+              height: 2rem;
+              border: none;
+              border-bottom: 0.5px solid #242424;
+              &:focus {
+                border: none;
+              }
+            }
+          }
+        }
+        .partmessage {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 90%;
+          height: 40%;
+          .formGroup {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            label {
+              text-align: left;
+            }
+            textarea {
+              width: 100%;
+              height: 60%;
+              border: none;
+              border-bottom: 0.5px solid #242424;
+              &:focus {
+                border: none;
+              }
+            }
+          }
+        }
+        .btnSend {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          button {
+            width: 30%;
+            height: 50%;
+            color: #fefefe;
+            font-size: 1rem;
+            border: none;
+            background: #096D72;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}

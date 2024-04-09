@@ -1,0 +1,19 @@
+.progress-bar-container {
+  width: 100%;
+  background-color: #fefefe;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #575757;
+  .progress-bar {
+    height: 20px;
+    border-radius: 4px;
+    background-color: #007bff; /* Couleur de la barre de progression */
+    transition: width 0.3s ease; /* Animation de transition de la largeur */
+    text-align: right;
+    line-height: 20px; /* Centrer le texte verticalement */
+    color: white; /* Couleur du texte */
+    .progress-label {
+      padding: 0 10px;
+    }
+  }
+}

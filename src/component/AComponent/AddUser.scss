@@ -1,0 +1,48 @@
+.addUser {
+  border-left: 1px solid #342534;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  h3 {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  form {
+    width: 100%;
+    margin-top: 30px;
+    .groupInput {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      input {
+        width: 80%;
+        height: 40px;
+        margin-bottom: 1rem;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(37, 52, 52, 0.5);
+        padding-left: 10px;
+      }
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 50px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color:#1e4854;
+        color: #fefefe;
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+  }
+}

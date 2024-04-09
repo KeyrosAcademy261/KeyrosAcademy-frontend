@@ -1,0 +1,110 @@
+.containerLogin {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    34deg,
+    rgba(2, 0, 36, 1) 9%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loginComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    background-color: aliceblue;
+    width: 25%;
+    height: 70%;
+    border-radius: 20px;
+    -webkit-box-shadow: -2px 0px 61px -9px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -2px 0px 61px -9px rgba(66, 68, 90, 1);
+    box-shadow: -2px 0px 61px -9px rgba(66, 68, 90, 1);
+    .titleLogin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      height: 20%;
+    }
+    .form {
+      width: 100%;
+      height: 60%;
+      .groupInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+        margin-top: 2rem;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba($color: #242424, $alpha: 0.4);
+        .input {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-top: 1rem;
+          .iconLogin {
+            font-size: 1.2rem;
+            margin-right: 20px;
+          }
+          input {
+            width: 100%;
+            height: 3rem;
+            border: none;
+            cursor: text;
+          }
+        }
+      }
+      .btnConnexion {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5rem;
+        button {
+          width: 80%;
+          height: 3rem;
+          border-radius: 20px;
+          border: none;
+          cursor: pointer;
+          font-size: 1.2rem;
+          background: rgb(2, 0, 36);
+          background: linear-gradient(
+            34deg,
+            rgb(14, 3, 218) 1%,
+            rgba(0, 212, 255, 1) 100%
+          );
+          color: white;
+          font-weight: 700;
+        }
+      }
+    }
+    .errorMssg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 20%;
+      p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        background-color: #ffefef;
+        border: 1px solid;
+        color: #e7195a;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+    }
+  }
+}

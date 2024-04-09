@@ -1,0 +1,50 @@
+.IntroBanner{
+    width: 100%;
+    height: calc(85vh - 80px);
+    background:linear-gradient(to left bottom, rgba(87, 87, 87, 0.3),rgba(91, 87, 87, 0.3 )),
+    url(../../asset/forex-trading-software-top-picks-for-your-capital-gain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px) grayscale(0.5) opacity(0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+        content: '';
+        background-color: dodgerblue;
+    }
+    .information{
+        display: flex;
+        justify-content: center;
+        background-color: linear-gradient(34deg);
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        h1{
+            font-size: 2.2rem;
+            color: #fefefe;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        p{
+            width: 60%;
+            font-size: 1.2rem;
+            color: #fefefe;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        button{
+            width: 30%;
+            height: 3.5rem;
+            border-radius: 50px;
+            border: none;
+            font-size: 1rem;
+            font-weight: 700;
+            a{
+                text-decoration: none;
+                color: #242424;
+            }
+        }
+
+    }
+}

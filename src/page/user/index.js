@@ -1,0 +1,7 @@
+export {default as UCourseNew} from './UCourseNew'
+export {default as UDashboard} from './UDashboard'
+export {default as UWebinaire} from './UWebinaire'
+export {default as Ulayout} from './Ulayout'
+export {default as USetting} from './USetting'
+export {default as UHeader} from '../../component/UComponent/UHeader'
+export {default as UNavBar} from '../../component/UComponent/UNavBar'

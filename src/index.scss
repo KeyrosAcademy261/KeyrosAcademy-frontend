@@ -1,0 +1,305 @@
+@media (min-width: 480px) and (max-width: 1620px) {
+  .App {
+    margin: 0;
+    padding: 0;
+    .PLayout {
+      width: 100%;
+      .containerFluidNavBar {
+        height: 60px;
+      }
+      .homeContainer {
+        width: 100%;
+        .IntroBanner {
+          width: 100%;
+          top: 80px;
+          height: 80vh;
+          .information {
+            width: 80%;
+            h1 {
+              text-align: center;
+              font-size: 1.8rem;
+            }
+            p {
+              font: 0.5rem;
+            }
+            button{
+              height: 50px;
+            }
+          }
+        }
+        .AboutUS {
+          width: 100%;
+          .containerAboutUs {
+            .card {
+              top: -70px;
+            }
+          }
+        }
+        .Course {
+          width: 100%;
+        }
+        .containerProfessor {
+          width: 100%;
+        }
+        .containerTestimonial {
+          width: 100%;
+          .AvisSpace {
+            .cardAvis {
+              width: 40%;
+              .student {
+                img {
+                }
+              }
+            }
+          }
+        }
+        .containerContactUs {
+          width: 100%;
+          height: 90vh;
+          .firstPartContactUs {
+            width: 50%;
+            height: 80%;
+            h2{
+              margin-top: 1rem;
+              font-size: 1.5rem;
+            }
+            p{
+              font-size: 0.8rem;
+              span{
+                font-size: 0.8rem;
+              }
+            }
+          }
+          .secondPartContactUs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .thirdPart{
+
+            width: 100%;
+            ul{
+              width: 50%;
+              list-style: none;
+              li{
+                text-align: center;
+                a{
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .containerLogin {
+        .loginComponent {
+          top: 20px;
+          width: 35%;
+          height: 80%;
+          .titleLogin {
+            font-size: 1.5rem;
+          }
+          .form {
+            height: 90%;
+
+            .groupInput {
+              width: 85%;
+              margin-top: 1.5rem;
+              .input {
+                .iconLogin {
+                  font-size: 1rem;
+                }
+                input {
+                  height: 2.5rem;
+                }
+              }
+            }
+            .btnConnexion {
+              margin-top: 5rem;
+              height: 40%;
+            }
+          }
+        }
+      }
+      .contactContainer {
+        .secondComponent {
+          margin-top: 4rem;
+          .aside {
+            width: 25%;
+            height: 80%;
+            .introduction {
+              h3 {
+                font-size: 1.6rem !important;
+              }
+              p {
+                font-size: 0.8rem;
+              }
+            }
+            .contactEPA {
+              margin-top: 2rem;
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+      .courseContainer{
+        .selectionCourse{
+          position: relative;
+          top: 30px;
+          height: calc(100% - 60px);
+          h3{
+            font-size: 1.5rem;
+          }
+          ul{
+            li{
+              
+              a {
+                font-weight: 600;
+                width: 100%;
+                .icons{
+                  font-size: 4rem;
+                }
+                .durationVideo {
+                  width: 10%;
+                  font-size: 1rem;
+                }
+                .titleVideo {
+                  width: 60%;
+                  text-align: center;
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+    .Alayout{
+      width: 100vw;
+      height: 100vh;
+      .ANavBar{
+        width: 20%;
+        .logo{
+          h1{
+            a{
+              font-size: 1.3rem;
+            }
+          }
+        }
+        .navigation{
+          ul{
+            li{
+              a{
+                font-size: 1.1rem;
+              }
+            }
+          }
+        }
+        .LogoutBtn{
+          width: 100%;
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+      .AdminContainer{
+        height: 100vh;
+        width: 80%;
+        .AHeaderContainer{
+          width: 100%;
+        }
+        .userContainer{
+          .affichage{
+            table{
+              thead{
+
+              }
+              tbody{
+                  td{
+                    overflow: hidden;
+                    font-size: 0.8rem; 
+                  }
+                  .pannel{
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+    .Ulayout{
+      width: 100vw;
+      height: 100vh;
+      .UNavBar{
+        width: 20%;
+        .logo{
+          h1{
+            a{
+              font-size: 1.3rem;
+            }
+          }
+        }
+        .navigation{
+          ul{
+            li{
+              a{
+                font-size: 1.1rem;
+              }
+            }
+          }
+        }
+        .LogoutBtn{
+          width: 100%;
+          p{
+            font-size: 1rem;
+          }
+        }
+      }
+      .UserContainer{
+        height: 100vh;
+        width: 80%;
+        .UHeaderContainer{
+          width: 100%;
+        }
+        .CourseContainer{
+          width: 100%;
+          .courseWrapper{
+            height: 100%;
+
+            .videoLecteur{
+              height: 55%;
+            }
+            .detailsVideo{
+              height: 30%;
+            }
+            .nextBtn{
+              margin-top: 1rem;
+            }
+          }
+          .navigationCourse{
+            .chapitre{
+              ul{
+                li{
+                  p{
+                    font-size: 0.7rem;
+                  }
+                  .iconChecked{
+                    font-size: 1rem;
+                  }
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media (max-width: 480px) {
+  .App {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,48 @@
+.AboutUS {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .containerAboutUs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .card {
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+      background-color: #fefefe;
+      -webkit-box-shadow: 0px 0px 73px -35px rgba(66, 68, 90, 1);
+      -moz-box-shadow: 0px 0px 73px -35px rgba(66, 68, 90, 1);
+      box-shadow: 0px 0px 73px -35px rgba(66, 68, 90, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      top: -100px;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      height: 250px;
+      z-index: 1;
+      border-radius: 20px;
+      .AboutUSIcon {
+        color: #1e4854;
+        font-size: 4rem;
+        margin-bottom: 30px ;
+      }
+      h3{
+        color: #1e4854;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+      }
+    }
+  }
+}
