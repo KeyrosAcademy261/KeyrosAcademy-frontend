@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:80/api",
+  "proxy": "https://api.keyros-academy.com/api",
   "name": "keyrosfinal",
   "version": "0.1.0",
   "private": true,

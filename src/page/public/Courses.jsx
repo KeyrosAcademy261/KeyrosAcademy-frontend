@@ -17,7 +17,7 @@ export default function Courses() {
       id: 2,
       title: "A qui s'adress notre formation",
       description:
-        "Dans cette vidéo, nous vous présentons une opportunité unique de développer vos compétences en trading. Que vous soyez un débutant cherchant à comprendre les bases du marché financier ou un investisseur expérimenté désireux d'approfondir vos connaissances, cette formation est conçue pour répondre à vos besoins. Explorez avec nous les principes fondamentaux du trading, les stratégies avancées et les outils essentiels pour réussir sur les marchés financiers.",
+        "Dans cette vidéo, nous vous présentons une opportunité unique de développer vos compétences en trading. Que vous soyez un débutant cherchant à comprendre les bases du marché financier ou un investisseur expérimenté désireux d'approfondir vos connaissances, cette formation est conçue pour répondre à vos besoins. Explorez avec nous les principes fondamentaux du trading.",
       link: "https://media.publit.io/file/Video0Public/cibleFormation.html?player=keyrosPlayer",
       duration: "2:08",
     },
@@ -25,7 +25,7 @@ export default function Courses() {
       id: 3,
       title: "Explication général",
       description:
-        "Dans notre programme de formation de trading, nous avons conçu trois niveaux distincts pour répondre à différents niveaux de compétence et d'expérience. Le module débutant offre une introduction complète aux bases du trading, couvrant des sujets tels que les types d'actifs, les ordres de marché, et la gestion des risques. Les traders professionnels bénéficieront du module intermédiaire, qui approfondit les concepts essentiels. Enfin, le module expert s'adresse aux traders chevronnés cherchant à perfectionner leurs compétences avec des sujets avancés. Quel que soit votre niveau actuel, notre formation de trading vous fournira les connaissances et les outils nécessaires pour réussir sur les marchés financiers.",
+        "Dans notre programme de formation de trading, nous avons conçu trois niveaux distincts pour répondre à différents niveaux de compétence et d'expérience. Le module débutant offre une introduction complète aux bases du trading, couvrant des sujets tels que les types d'actifs, les ordres de marché, et la gestion des risques. Les traders professionnels bénéficieront du module intermédiaire, qui approfondit les concepts essentiels.",
       link: "https://media.publit.io/file/Video0Public/explication.html?player=keyrosPlayer",
       duration: "3:44",
     },
@@ -43,7 +43,7 @@ export default function Courses() {
               title={title}
               src={video}
               scrolling="no"
-              allowfullscreen="true"
+              allowFullScreen="true"
               webkitallowfullscreen="true"
               mozallowfullscreen="true"
             ></iframe>

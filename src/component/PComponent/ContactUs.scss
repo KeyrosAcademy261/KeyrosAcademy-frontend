@@ -44,6 +44,12 @@
     color: #fefefe;
     font-weight: 100;
     font-size: 1rem;
+    p{
+      a{
+        text-decoration: none;
+        color: #fefefe;
+      }
+    }
   }
   .thirdPart {
     display: flex;

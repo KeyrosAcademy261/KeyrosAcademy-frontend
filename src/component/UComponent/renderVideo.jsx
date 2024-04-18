@@ -44,10 +44,10 @@ function RenderVideo() {
         const newChaine = chaine.replace(/0/g, ' ')
         return newChaine
     }
-    const viewVideo = (e) => {
-        fetchData(e);
-        navigate(`/user/course/view/${e}`)
+    const viewVideo = (uid) => {
+        navigate(`/user/course/view/${uid}`)
         console.log('view video')
+        fetchData(uid);
     }
     if (!details) {
         return (

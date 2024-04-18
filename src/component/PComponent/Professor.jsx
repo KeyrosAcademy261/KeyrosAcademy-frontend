@@ -1,5 +1,4 @@
 import React from "react";
-import { Ceo } from "../../asset/index";
 import "./Professor.scss";
 
 export default function Professor() {
@@ -10,7 +9,10 @@ export default function Professor() {
       </div>
       <div className="second">
         <div className="aside">
-          <img src={Ceo} alt="profil du professor" />
+          <img
+            src="https://media.publit.io/file/w_400/ASSET/ceo.jpg"
+            alt="profil du professor"
+          />
           <p>KEVIN SANDERS - Founder & CEO</p>
         </div>
         <div className="section">

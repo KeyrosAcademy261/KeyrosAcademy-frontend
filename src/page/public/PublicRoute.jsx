@@ -7,6 +7,7 @@ import ContactUs from "./ContactUs";
 import Login from "./Login";
 import LoginAdmin from "./LoginAdmin";
 import NotFoundPage from "../../component/NotFoundPage";
+import Paiement from "./paiement";
 
 export default function PublicRoute() {
   return (
@@ -19,6 +20,7 @@ export default function PublicRoute() {
         <Route path="contact" element={<ContactUs />} />
         <Route path="login" element={<Login />} />
         <Route path="adminLogin" element={<LoginAdmin/>}/>
+        <Route path="paiement" element={<Paiement/>}/>
       </Route>
     </Routes>
   );

@@ -7,7 +7,6 @@ function UVideoAffichage() {
   const navigate = useNavigate()
   const [coursList, setCoursList] = useState([])
   const [folderList, setFolderList] = useState([])
-  const [progess, setProgress] = useState(50);
   const flag = useRef(false)
 
   async function fetchFolderData(e) {

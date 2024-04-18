@@ -1,6 +1,5 @@
 import React, { useState} from 'react'
 import { accountService } from '../../_services/account.service'
-import AffichageUser from '../../component/AComponent/AffichageUser'
 import './AddUser.scss'
 
 

@@ -18,8 +18,8 @@ export default function ContactUs() {
             </p>
           </div>
           <div className="contactEPA">
-            <p><FaPhone className="icon contact"/> +261 34 07 508 09</p>
-            <p><FaEnvelope className="icon contact"/> kevinsanders@gmail.com</p>
+            <p><FaPhone className="icon contact"/> +261 34 35 853 74</p>
+            <p><FaEnvelope className="icon contact"/> keyrosacademy@gmail.com</p>
             <p><FaLocationDot className="icon contact"/> lot IVH 31 Ter Antsirabe</p>
           </div>
           <div className="socialResaux">
