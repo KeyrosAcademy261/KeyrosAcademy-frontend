@@ -54,7 +54,7 @@ export default function ContactUs() {
       </div>
       <div className="SecondPartContactUs">
         <p>
-          Copyright @ 2023 Anjaniaina <Link to={"/adminlogin"}>Devs</Link>
+          Copyright @ 2023 Anjaniaina Devs
         </p>
       </div>
     </div>

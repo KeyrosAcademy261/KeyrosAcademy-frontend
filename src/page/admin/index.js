@@ -1,5 +1,5 @@
 export {default as ADashboard} from "./ADashboard"
-export {default as ACourse} from "./ACourse"
+export { default as AMessage } from "./AMessage";
 export {default as AWebinaire} from "./AWebinaire"
 export {default as AUsers} from "./AUsers"
 export {default as AHeader} from "../../component/AComponent/AHeader"

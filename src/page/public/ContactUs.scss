@@ -181,6 +181,46 @@
           }
         }
       }
+      .errorMssg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 20%;
+      p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        background-color: #ffefef;
+        border: 1px solid;
+        color: #03fa0f;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+    }
+    .successMssg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 20%;
+      p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        background-color: #ffefef;
+        border: 1px solid;
+        color: #03fa0f;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+    }
     }
   }
 }

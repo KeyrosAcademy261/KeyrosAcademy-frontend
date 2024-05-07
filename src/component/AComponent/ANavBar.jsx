@@ -9,7 +9,7 @@ export default function ANavBar() {
   const navigate = useNavigate()
   const ANavigation = [
     {"id" : 1, "name": "Dashboard", "link": "dashboard"},
-    {"id" : 2, "name": "Course", "link": "course"},
+    {"id" : 2, "name": "Message", "link": "message"},
     {"id" : 3, "name": "Webinaire", "link": "webinaire"},
     {"id" : 4, "name": "User", "link": "user"},
   ]

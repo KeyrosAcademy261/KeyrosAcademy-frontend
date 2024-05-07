@@ -1,17 +1,21 @@
 import Axios from './caller.service'
 
-let getAllVideos = ()=>{
-    return Axios.get('/videos')
+let getAllVideos = (uid)=>{
+    return Axios.get('/levels/videoFolder/'+ uid)
 }
 let getAllFolder = ()=>{
-    return Axios.get('/videos/folders')
+    return Axios.get("/levels/folder/allFolders");
+}
+let getFolder = (uid)=>{
+    return Axios.get("/levels/folder/" + uid);
 }
 let getOneVideo = (uid)=>{
-    return Axios.get('/videos/'+uid)
+    return Axios.get("/levels/video/" + uid);
 }
 
 export const videoServices ={
     getAllVideos,
     getAllFolder,
-    getOneVideo
+    getOneVideo,
+    getFolder
 }

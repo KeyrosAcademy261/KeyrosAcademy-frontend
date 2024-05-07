@@ -1,0 +1,30 @@
+.attente {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #1e4854;
+            img{
+              width: 200px;
+              height: 200px;
+              background-color: transparent;
+            }
+            h1{
+              font-size: 4rem;
+              text-transform: uppercase;
+            }
+            .icons{
+              font-size: 5rem;
+              animation: spin 2s linear infinite;
+            }
+            @keyframes spin {
+              0%{
+                transform: rotate(0deg);
+              }
+              100%{
+                transform: rotate(360deg);
+              }
+            }
+          }

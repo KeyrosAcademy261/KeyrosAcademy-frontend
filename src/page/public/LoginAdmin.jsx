@@ -23,7 +23,6 @@ export default function LoginAdmin() {
     
     accountService.Adminlogin(credentials)
       .then(res=>{
-        console.log(res.data)
         const token = res.data.token
         accountService.saveToken(token)
         accountService.saveEmail(res.data.email)

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { accountService } from "./account.service";
 const Axios = axios.create({
-  baseURL: "https://api.keyros-academy.com/api",
+  baseURL: "http://localhost:8000/api",
 });
 
 /**
@@ -16,3 +16,7 @@ Axios.interceptors.request.use((request) => {
 });
 
 export default Axios;
+
+
+
+

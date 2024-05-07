@@ -1,50 +1,59 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { videoServices } from '../../_services/video.services'
-import { calcule } from '../../component/function'
-import { useNavigate } from 'react-router-dom'
+/* eslint-disable array-callback-return */
+import React, { useEffect, useRef, useState } from "react";
+import Chargement from "../chargement";
+import { replace, replaceTitle } from "../../functions/function";
+import { videoServices } from "../../_services/video.services";
+import { calcule } from "../../functions/function";
+import { useNavigate, useParams } from "react-router-dom";
 
 function UVideoAffichage() {
-  const navigate = useNavigate()
-  const [coursList, setCoursList] = useState([])
-  const [folderList, setFolderList] = useState([])
-  const flag = useRef(false)
+  const { uid } = useParams();
+  const navigate = useNavigate();
+  const [coursList, setCoursList] = useState([]);
+  const [folderList, setFolderList] = useState([]);
+  const [title, setTitle] = useState("");
+  const flag = useRef(false);
 
   async function fetchFolderData(e) {
-    await videoServices.getAllFolder()
-      .then(res => e(res.data[0].folders))
-      .catch((error) => console.log(error))
+    await videoServices
+      .getFolder(uid)
+      .then((res) => e(res.data[0].folders))
+      .catch((error) => console.log(error));
+  }
+  async function fecthFolderTitle(e) {
+    await videoServices
+      .getFolder(uid)
+      .then((res) => e(res.data[0].parent_path));
   }
   async function fetchDataCours(e) {
-    await videoServices.getAllVideos()
-      .then(res => {
-        e(res.data[0].files)
+    await videoServices
+      .getAllVideos(uid)
+      .then((res) => {
+        e(res.data[0].files);
       })
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error));
   }
   useEffect(() => {
     if (flag.current === false) {
-      fetchDataCours(setCoursList)
-      fetchFolderData(setFolderList)
+      fetchDataCours(setCoursList);
+      fetchFolderData(setFolderList);
+      fecthFolderTitle(setTitle);
     }
-    return () => flag.current = true
-  }, [])
-  if (!coursList) {
-    return (
-      <div className="attente">
-        <h1>Chargement en Cours...</h1>
-      </div>
-    )
-  }
-  const replace = (e) => {
-    const chaine = e
-    const newChaine = chaine.replace(/0/g, ' ')
-    return newChaine
-  }
-  const viewVideo = (uid) => {
-    navigate(`view/${uid}`)
-    console.log('view video')
+    return () => (flag.current = true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  if (coursList.length < 1) {
+    fetchDataCours(setCoursList);
+    fetchFolderData(setFolderList);
+    fecthFolderTitle(setTitle);
+    return <div className="attente">{Chargement()}</div>;
   }
 
+  const viewVideo = (uid) => {
+    navigate(`view/${uid}`);
+    console.log("view video");
+  };
   return (
     <div className="UCourseContainer">
       <div className="courseTitle">
@@ -56,7 +65,7 @@ function UVideoAffichage() {
           alt="bull and bear"
         />
         <div className="details">
-          <h2>DEBUTANT COURSE</h2>
+          <h2>{replaceTitle(title)}</h2>
         </div>
       </div>
       {folderList.map((e) => {
@@ -96,4 +105,4 @@ function UVideoAffichage() {
   );
 }
 
-export default UVideoAffichage
+export default UVideoAffichage;

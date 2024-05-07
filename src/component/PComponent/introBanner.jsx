@@ -13,7 +13,7 @@ export default function IntroBanner() {
           finances au niveau supérieur.
         </p>
         <button>
-          <Link to={"contact"}>Commencer à Apprendre</Link>
+          <Link to={"paiement"}>Commencer à Apprendre</Link>
         </button>
       </div>
     </div>
